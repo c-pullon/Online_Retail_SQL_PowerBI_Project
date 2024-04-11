@@ -5,4 +5,5 @@ GROUP BY p.Description
 ORDER BY TotalQuantity DESC;
 
 
--- this shows that there are clearly some incorrect errors, we will have to fix this in PowerBI
+-- this shows that there are clearly some incorrect errors, we will have to fix this in PowerBI by transforming the data,
+-- and excluding some results from visualisations
