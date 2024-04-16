@@ -15,6 +15,3 @@ ALTER COLUMN UnitPrice FLOAT;
 UPDATE Online_Retail.dbo.full_dataset
 SET InvoiceDate = CONVERT(DATE, InvoiceDate, 103); 
 
--- Alter 'InvoiceDate' column to DATE data type
-ALTER TABLE Online_Retail.dbo.full_dataset
-ALTER COLUMN InvoiceDate DATE;
