@@ -14,7 +14,9 @@ Following analysis in SQL, the database is imported into Power BI where an inter
 ## Schema Creation in SQL 
 The initial dataset is a single CSV file, which is imported into SQL Server as one table.
 
-**Table creation.** Here a table is created with columns defined as VARCHAR initially for flexible data import.
+**Table creation** 
+
+Here a table is created with columns defined as VARCHAR initially for flexible data import.
 ```sql
 -- Define and populate initial table from CSV file
 USE Online_Retail;
@@ -30,7 +32,9 @@ CREATE TABLE full_dataset (
     Country VARCHAR(50)
 );
 ```
-**Population.** Bulk insert is used to load data directly from the CSV file into the full_dataset table.
+**Population** 
+
+Bulk insert is used to load data directly from the CSV file into the full_dataset table.
 ```sql
 BULK INSERT Online_Retail.dbo.full_dataset
 FROM 'C:\Users\Charl\Desktop\Online_Retail\Online Retail.csv'
@@ -41,6 +45,7 @@ WITH (
 );
 ```
 **Initial cleaning and data type conversion**
+
 Incorrect entries are removed after being identified: rows where quantity cannot be converted to INT are removed. Then quantity, unit price and date columns are converted to appropriate formats.
 ```sql
 DELETE FROM Online_Retail.dbo.full_dataset
@@ -56,6 +61,7 @@ UPDATE Online_Retail.dbo.full_dataset
 SET InvoiceDate = CONVERT(DATE, InvoiceDate, 103); 
 ```
 **Data Normalisation.**
+
 The initial dataset is normalised into five tables which are linked by primary and foreign keys, to ensure efficient storage and data integrity. 
 
 Five tables are created with columns and data types specified, as well as keys and identities:
