@@ -60,7 +60,7 @@ ALTER COLUMN UnitPrice FLOAT;
 UPDATE Online_Retail.dbo.full_dataset
 SET InvoiceDate = CONVERT(DATE, InvoiceDate, 103); 
 ```
-**Data Normalisation.**
+**Data Normalisation**
 
 The initial dataset is normalised into five tables which are linked by primary and foreign keys, to ensure efficient storage and data integrity. 
 
