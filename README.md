@@ -109,7 +109,7 @@ CREATE TABLE OrderDetails (
 );
 ```
 **Table Population**
-Once the five tables are created and linked by keys, data from the full_dataset is inserted into the relevant tables based on column names.:
+Once the five tables are created and linked by keys, data from the full_dataset is inserted into the relevant tables based on column names:
 ```sql
 -- Populate Countries Table
 INSERT INTO Countries (CountryName)
