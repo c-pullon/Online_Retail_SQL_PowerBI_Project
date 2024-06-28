@@ -270,35 +270,18 @@ DROP TABLE #MonthlyRevenue;
 ```
 
 ## What I Learned
-- **Geographical Revenue Analysis**:
+- **Geographical Revenue Analysis**: Analysing total revenue by country provided insights into regional sales performance, which could
+   help strategic decision-making regarding market expansion or targeted marketing efforts based on revenue concentration.
 
-    - Insight: Analysing total revenue by country provided insights into regional sales performance.
-    - Application: Helps in strategic decision-making regarding market expansion or targeted marketing efforts based on revenue concentration.
+- **Product Performance Evaluation**: Identifying top-selling products by quantity highlighted popular items could guide inventory management and marketing strategies.
 
-- **Product Performance Evaluation**:
+- **Temporal Revenue Trends**: Calculating monthly revenue trends illustrated seasonal variations or growth patterns, supporting forecasting and resource allocation based on historical sales data trends over time.
 
-    - Insight: Identifying top-selling products by quantity highlighted popular items.
-    - Application: Guides inventory management and marketing strategies.
+- **Customer Spending Patterns**: Ranking customers by spending provided insights into high-value clients, which could facilitate customer relationship management (CRM) strategies to personalise marketing efforts and enhance customer retention.
 
-- **Temporal Revenue Trends**:
-
-    - Insight: Calculating monthly revenue trends illustrated seasonal variations or growth patterns.
-    - Application: Supports forecasting and resource allocation based on historical sales data trends over time.
-
-- **Customer Spending Patterns**:
-
-    - Insight: Ranking customers by spending provided insights into high-value clients.
-    - Application: Facilitates customer relationship management (CRM) strategies to personalise marketing efforts and enhance customer retention.
-
-- **Query Optimisation Techniques**:
-
-    - Insight: Using CTEs and stored procedures improved query efficiency and reusability.
-    - Application: Enhances database performance and streamlines complex data retrieval tasks for ongoing analytics and reporting needs.
-
-- **Advanced Analytical Tools**:
-
-    Insight: Employing window functions for calculating rolling averages enhanced data analysis capabilities.
-    Application: Supports dynamic insights into trends and patterns, facilitating proactive decision-making based on real-time data analysis.
+- **Query Optimisation Techniques**: Using CTEs and stored procedures improved query efficiency and reusability to enhance database performance and streamline complex data retrieval tasks.
+  
+- **Advanced Analytical Tools**: Employing window functions for calculating rolling averages enhanced data analysis capabilities to support dynamic insights into trends and patterns, facilitating proactive decision-making based on real-time data analysis.
 
 ## Dashboard Development in Power BI
 Now that multiple queries have been performed on the database, it is imported into Power BI where visualisations are created based on the insights gained in SQL, and further data analysis is performed.
